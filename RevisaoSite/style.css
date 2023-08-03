@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 100%;
+}
+
+.menu1 {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.linkmenu {
+    color: aliceblue;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.5vw;
+    /* vw é uma fonte resposnsiva que se ajusta de acordo com a largura */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hb {
+    display: none;
+}
+
+.menBurg {
+    display: none;
+}
+
+
+@media screen and (max-width:1024px) {
+    .menu1 {
+        display: none;
+    }
+
+    .hb {
+        display: inline;
+    }
+
+    .hb:hover~.menBurg,
+    .menBurg:hover {
+        display: block;
+    }
+}
+
+/* FALE CONOSCO */
+
+.container-cadast {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 120vh;
+}
+
+.test-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 110vh;
+
+    background-color: rgb(255, 255, 255);
+}
+
+.container-contats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    /* border-radius: 50px; */
+
+    width: 48%;
+    height: 105vh;
+
+
+    color: aliceblue;
+    background-color: rgb(58, 57, 57);
+}
+
+
+.test {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    height: 105vh;
+    width: 90%;
+}
+
+.test h2 p {
+    margin: 0;
+}
+
+.imgtest {
+    width: 30%;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+}
+
+.imgtest img {
+    height: 40px;
+    width: 30%;
+}
+
+.container-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 10px;
+
+    width: 45%;
+    height: 105vh;
+    background-color: rgb(148, 148, 148);
+}
+
+.container-inputs input {
+    border: 0;
+    border-radius: 50px;
+    width: 80%;
+    height: 5vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.container-inputs h2 {
+    width: 80%;
+
+    margin-top: 20px;
+    font-size: 3vh;
+}
+
+textarea {
+    border: 0;
+    width: 80%;
+    height: 20vh;
+    border-radius: 30px;
+}
+
+#inputbutton {
+
+    margin-top: 20px;
+    width: 30%;
+}
+
+/* FOOTER */
+
+
+footer {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 25vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+footer img {
+    width: 30%;
+    height: 22vh;
+    margin-left: 40px;
+
+}
+
+.list img {
+    width: 20%;
+    height: 10vh;
+
+}
+
+.list {
+    margin-right: 40px;
+    width: 30%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.list-po {
+    margin-right: 40px;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.linkmenuf {
+    color: aliceblue;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1vw;
+    /* vw é uma fonte resposnsiva que se ajusta de acordo com a largura */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
