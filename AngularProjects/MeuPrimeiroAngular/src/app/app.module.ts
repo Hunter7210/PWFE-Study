@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { ContatoComponent } from './contato/contato.component';
 import { ContainerMeioComponent } from './container-meio/container-meio.component';
+import { FormularioComponent } from './formulario/formulario.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContainerMeioComponent } from './container-meio/container-meio.componen
     HomeComponent,
     SobreComponent,
     ContatoComponent,
-    ContainerMeioComponent
+    ContainerMeioComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
