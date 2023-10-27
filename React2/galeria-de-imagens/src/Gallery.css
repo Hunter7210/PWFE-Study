@@ -1,0 +1,26 @@
+/* src/Gallery.css */
+/* Define o tamanho padrão para as imagens na galeria */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: auto;
+    display: flex;
+    gap: 5px;
+
+}
+
+.image-container img {
+
+    margin: 10px;
+    width: 40vh;
+    /* Define o tamanho desejado para as imagens */
+    height: auto;
+}

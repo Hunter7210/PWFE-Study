@@ -1,12 +1,12 @@
 <template>
     <div class="catalogo-livros">
         <h2>Catálogo de livros</h2>
-        <input v-model="novoFilme" @keyup.enter="adicionarlivro" placeholder="Digite um novo livro" />
+        <input v-model="novoLivros" @keyup.enter="adicionarlivro" placeholder="Digite um novo livro" />
         <ul>
-            <li v-for="(filme, index) in filmes" :key="index">
-                {{ filme.titulo }}
-                <button @click="alternarStatus(filme)">Marcar como {{
-                    filme.assistido ? 'Não Assistido' : 'Assistido' }}</button>
+            <li v-for="(livros, index) in livross" :key="index">
+                {{ livros.titulo }}
+                <button @click="alternarStatus(livros)">Marcar como {{
+                    livros.assistido ? 'Não Assistido' : 'Assistido' }}</button>
             </li>
         </ul>
     </div>
