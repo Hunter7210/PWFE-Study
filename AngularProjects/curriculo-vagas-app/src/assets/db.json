@@ -1,0 +1,40 @@
+{
+  "vagas": [
+    {
+      "id": 3,
+      "nome": "Desenvolver Fullstack Senior",
+      "foto": "img3.jpg",
+      "descricao": "Trabalhar com Desenvolvimento Web",
+      "salario": 10000
+    },
+    {
+      "id": 4,
+      "nome": "Desenvolver Fullstack Senior",
+      "foto": "img3.jpg",
+      "descricao": "Trabalhar com Desenvolvimento Web",
+      "salario": 10000
+    },
+    {
+      "id": "10101",
+      "nome": "101",
+      "foto": "img.jpg",
+      "descricao": "101",
+      "salario": "001"
+    },
+    {
+      "id": "8",
+      "nome": "asdsad",
+      "foto": "img3.jpg",
+      "descricao": "fgbhfgh",
+      "salario": "0101010"
+    },
+    {
+      "id": "1",
+      "nome": "teste",
+      "foto": "img1.jpg",
+      "descricao": "jlçhklç",
+      "salario": "5000"
+    }
+  ],
+  "curriculos": []
+}

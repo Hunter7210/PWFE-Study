@@ -1,7 +1,7 @@
 // Importa os módulos e classes necessárias
 import { Component, OnInit } from '@angular/core';
 import { VagaService } from '../../service/vagas.service';
-import { Vaga } from '../../../models/vaga.model';
+import { Vaga } from '../../models/vaga.model';
 
 
 @Component({

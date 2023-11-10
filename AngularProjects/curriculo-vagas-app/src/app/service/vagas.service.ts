@@ -2,7 +2,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Vaga } from 'src/models/vaga.model';
+import { Vaga } from 'src/app/models/vaga.model';
 
 @Injectable({
   providedIn: 'root',
@@ -11,9 +11,9 @@ import { Vaga } from 'src/models/vaga.model';
 export class VagaService {
   private apiUrl = 'http://localhost:3000/vagas'; // Caminho para o arquivo JSON
 
-  constructor(private http: HttpClient) { }
-  
+  constructor(private http: HttpClient) { } //http é um obj de HttpClient //HttpClient com Classe que permite fazer as conexões com o banco de dados
   // Obtém a lista de vagas a partir do arquivo JSON
+
   getVagas(): Observable<Vaga[]> {
     return this.http.get<Vaga[]>(this.apiUrl);
   }
