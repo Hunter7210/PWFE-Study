@@ -1,0 +1,68 @@
+<h2>Cadastrar</h2>
+<form>
+
+  <label>Id</label>
+  <input type="text" name="id" [(ngModel)]="curriculo.id" /> <br/>
+
+  <label>Nome</label>
+  <input type="text" name="nome" [(ngModel)]="curriculo.nome" /><br/>
+
+  <label>idade</label>
+  <input type="text" name="nome" [(ngModel)]="curriculo.idade" /><br/>
+
+  <label>Email</label>
+  <input type="text" name="nome" [(ngModel)]="curriculo.email" /><br/>
+
+  <label>Telefone</label>
+  <input type="text" name="nome" [(ngModel)]="curriculo.telefone" /><br/>
+
+  <label>Experiência</label>
+  <input type="text" name="nome" [(ngModel)]="curriculo.experiencia" /><br/>
+
+  <label>Qualificação</label>
+  <input type="text" name="nome" [(ngModel)]="curriculo.qualificacoes" /><br/>
+
+  <label>Pretenção Salarial</label>
+  <input type="text" name="nome" [(ngModel)]="curriculo.pretencaoSalarial" /><br/>
+
+  <button type="button" (click)="cadastrar()">Cadastrar curriculo</button>
+  <button type="button" (click)="atualizar(curriculo.id)">Atualizar curriculo</button>
+  <button type="button" (click)="excluir(curriculo.id)">Excluir curriculo</button>
+
+</form>
+<section class="lista-curriculos">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Código da curriculo</th>
+        <th>curriculo</th>
+        <th>Descrição da curriculo</th>
+        <th>Salário</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let curriculo of curriculos" class="curriculo-row">
+        <td>{{ curriculo.id }}</td>
+        <td>{{ curriculo.nome }}</td>
+        <td>{{ curriculo.idade }}</td>
+        <td>{{ curriculo.email }}</td>
+        <td>{{ curriculo.telefone }}</td>
+        <td>{{ curriculo.experiencia }}</td>
+        <td>{{ curriculo.qualificacoes }}</td>
+        <td>{{ curriculo.pretencaoSalarial }}</td>
+        <td>
+          <button type="button" (click)="listarCurriculo(curriculo)" class="btn-listar">
+            Listar
+          </button>
+
+          <button type="button" (click)="excluir(curriculo.id)" class="btn-excluir">
+            Excluir
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<div class="rodape">
+</div>
